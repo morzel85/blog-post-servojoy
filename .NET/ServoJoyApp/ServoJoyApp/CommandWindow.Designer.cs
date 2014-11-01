@@ -50,6 +50,7 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.gbTiltServo = new System.Windows.Forms.GroupBox();
+            this.chkTiltInvert = new System.Windows.Forms.CheckBox();
             this.lblTiltServoMax = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.lblTiltServoMin = new System.Windows.Forms.Label();
@@ -57,6 +58,7 @@
             this.lblTiltServoPosition = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.gbPanServo = new System.Windows.Forms.GroupBox();
+            this.chkPanInvert = new System.Windows.Forms.CheckBox();
             this.rbPanOnZAxis = new System.Windows.Forms.RadioButton();
             this.rbPanOnXAxis = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
@@ -88,8 +90,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.spArduino = new System.IO.Ports.SerialPort(this.components);
             this.tmServoPosition = new System.Windows.Forms.Timer(this.components);
-            this.chkPanInvert = new System.Windows.Forms.CheckBox();
-            this.chkTiltInvert = new System.Windows.Forms.CheckBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.gbZAxis.SuspendLayout();
             this.pnlZAxisPercent.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -335,6 +336,16 @@
             this.gbTiltServo.TabStop = false;
             this.gbTiltServo.Text = "Tilt servo";
             // 
+            // chkTiltInvert
+            // 
+            this.chkTiltInvert.AutoSize = true;
+            this.chkTiltInvert.Location = new System.Drawing.Point(147, 33);
+            this.chkTiltInvert.Name = "chkTiltInvert";
+            this.chkTiltInvert.Size = new System.Drawing.Size(59, 17);
+            this.chkTiltInvert.TabIndex = 15;
+            this.chkTiltInvert.Text = "Invert";
+            this.chkTiltInvert.UseVisualStyleBackColor = true;
+            // 
             // lblTiltServoMax
             // 
             this.lblTiltServoMax.AutoSize = true;
@@ -414,6 +425,18 @@
             this.gbPanServo.TabIndex = 12;
             this.gbPanServo.TabStop = false;
             this.gbPanServo.Text = "Pan servo";
+            // 
+            // chkPanInvert
+            // 
+            this.chkPanInvert.AutoSize = true;
+            this.chkPanInvert.Checked = true;
+            this.chkPanInvert.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkPanInvert.Location = new System.Drawing.Point(151, 47);
+            this.chkPanInvert.Name = "chkPanInvert";
+            this.chkPanInvert.Size = new System.Drawing.Size(59, 17);
+            this.chkPanInvert.TabIndex = 14;
+            this.chkPanInvert.Text = "Invert";
+            this.chkPanInvert.UseVisualStyleBackColor = true;
             // 
             // rbPanOnZAxis
             // 
@@ -743,33 +766,23 @@
             this.tmServoPosition.Interval = 10;
             this.tmServoPosition.Tick += new System.EventHandler(this.tmServoPosition_Tick);
             // 
-            // chkPanInvert
+            // label8
             // 
-            this.chkPanInvert.AutoSize = true;
-            this.chkPanInvert.Checked = true;
-            this.chkPanInvert.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkPanInvert.Location = new System.Drawing.Point(151, 47);
-            this.chkPanInvert.Name = "chkPanInvert";
-            this.chkPanInvert.Size = new System.Drawing.Size(59, 17);
-            this.chkPanInvert.TabIndex = 14;
-            this.chkPanInvert.Text = "Invert";
-            this.chkPanInvert.UseVisualStyleBackColor = true;
-            // 
-            // chkTiltInvert
-            // 
-            this.chkTiltInvert.AutoSize = true;
-            this.chkTiltInvert.Location = new System.Drawing.Point(147, 33);
-            this.chkTiltInvert.Name = "chkTiltInvert";
-            this.chkTiltInvert.Size = new System.Drawing.Size(59, 17);
-            this.chkTiltInvert.TabIndex = 15;
-            this.chkTiltInvert.Text = "Invert";
-            this.chkTiltInvert.UseVisualStyleBackColor = true;
+            this.label8.AutoSize = true;
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.label8.Location = new System.Drawing.Point(8, 193);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(408, 13);
+            this.label8.TabIndex = 20;
+            this.label8.Text = "Start joystick monitoring and move joystick in all axes before connecting with Ar" +
+    "duino!";
             // 
             // CommandWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(957, 251);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.gbArduinoConnection);
             this.Controls.Add(this.gbJoystickMonitoring);
             this.Controls.Add(this.rbXAxis);
@@ -804,6 +817,7 @@
             this.gbArduinoConnection.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudBaudRate)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -870,6 +884,7 @@
         private System.Windows.Forms.Timer tmServoPosition;
         private System.Windows.Forms.CheckBox chkTiltInvert;
         private System.Windows.Forms.CheckBox chkPanInvert;
+        private System.Windows.Forms.Label label8;
     }
 }
 
