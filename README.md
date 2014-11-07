@@ -1,7 +1,7 @@
 This is sample code for blog post!
 ==================
 
-**Blog post comming soon!**
+Read the post on CodeProject: http://www.codeproject.com/Articles/839229/OoB-Moving-webcam-with-joystick-and-servos-Arduino or on my blog: http://en.morzel.net/post/2014/10/23/OoB-Moving-webcam-with-joystick-and-servos-(ArduinoSharpDXWinForms).aspx
 
 ##### Dependencies: 
 This project is using *SharpDX* and *SharpDX.DirectInput* NuGet packages.
