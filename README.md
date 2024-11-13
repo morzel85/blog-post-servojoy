@@ -1,4 +1,4 @@
-This is sample code for blog post!
+This is sample code for blog a post!
 ==================
 
 Read the post on CodeProject: http://www.codeproject.com/Articles/839229/OoB-Moving-webcam-with-joystick-and-servos-Arduino or on my blog: http://en.morzel.net/post/2014/10/23/OoB-Moving-webcam-with-joystick-and-servos-(ArduinoSharpDXWinForms).aspx
